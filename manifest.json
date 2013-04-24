@@ -1,0 +1,13 @@
+{
+  "name": "Cache Control",
+  "version": "1.0",
+  "manifest_version": 2,
+  "description": "Fixing up the proxy issues, and cache control.",
+  "content_scripts": [
+    {
+      "matches": ["https://dev.net/*","https://dev.com/*","http://dev.com/devnet/*"],
+      "js": [ "jquery.js", "myscript.js"]
+    }
+  ],
+  "permissions": [ "contentSettings", "tabs", "https://dev.net/*","https://dev.com/*","http://dev.com/devnet/*"]
+}
